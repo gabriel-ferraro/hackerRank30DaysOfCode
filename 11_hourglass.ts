@@ -56,7 +56,7 @@ function calculateHourGlassSum(hourglasses: number[][]) {
 (() => {
     console.log(calculateHourGlassSum(hourglassesVector));
     console.log(calculateHourGlassSum(hourglassesVector2));
-})();
+})(); 
 
 //hourglasses for testing:
 // 1 1 1   1 1 0   1 0 0   0 0 0
