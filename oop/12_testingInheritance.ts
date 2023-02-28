@@ -1,14 +1,6 @@
 
 class Person {
-    firstName: string;
-    lastName: string;
-    idNumber: number;
-
-    constructor(firstName: string, lastName: string, idNumber: number) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.idNumber = idNumber;
-    }
+    constructor(public firstName: string, public lastName: string, public idNumber: number) {}
 
     printPerson() {
         console.log("Name: " + this.lastName + ", " + this.firstName + "\nID: " + this.idNumber);

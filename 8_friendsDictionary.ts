@@ -1,14 +1,14 @@
-//create a friendsDictionary with the structure: Map<string, number>, by receiving strings as parameter, formated as: "friendName friendNumber"
-//after that create a print function that recieves a string parameter - name for searching in the map, if the name exists, return a string:
+//creating a friendsDictionary with the structure: Map<string, number>, by receiving strings as parameter, formated as: "friendName friendNumber"
+//creating a print function that recieves a string parameter - name for searching in the map, if the name exists, return a string:
 //"name=number" - if it doesn't exist, return "Not found";
 
 function createDictionary(...friends: string[]) {
     const dictionary = new Map<string, number>();
-    for (let i = 0; i < friends.length; i++) {
-        let currentMapItem = friends[i].split(' ');
+    friends.forEach(friend => {
+        let currentMapItem = friend.split(' ');
 
         dictionary.set(currentMapItem[0], parseInt(currentMapItem[1]));
-    }
+    });
     return dictionary;
 }
 

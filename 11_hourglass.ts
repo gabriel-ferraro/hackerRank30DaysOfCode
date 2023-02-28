@@ -9,7 +9,7 @@ const vectorOfHourglasses = [
     [1, 0, 0, 0, 0, 0]
 ];
 
-greatest sum of above vector is 14
+greatest sum of the vector above is 14
 
 restrictions: each hourglass is formed by a 3X3 vector, but only the 3 upper, 3 lower and middle item are considered for the sum:
 1 1 1

@@ -1,13 +1,9 @@
 class Person {
-    age: number;
-
-    constructor(initialAge: number) {
-        if (initialAge < 0) {
+    constructor(public age: number) {
+        if (age < 0) {
             console.log("Age is not valid, setting age to 0.");
             this.age = 0;
-            return;
         }
-        this.age = initialAge;
     }
 
     amIOld() {
@@ -26,15 +22,17 @@ class Person {
 }
 
 function main() {
-    const T = parseInt(readLine());
-    for (let i = 0; i < T; i++) {
-        let age = parseInt(readLine());
-        let p = new Person(age);
-        p.amIOld();
-        for (let j = 0; j < 3; j++) {
-            p.yearPasses();
+   
+    const personArr = [new Person(4), new Person(10), new Person(15), new Person(17)];
+
+    personArr.forEach(person => {
+        person.amIOld();
+        for (let i = 0; i < 3; i++) {
+            person.yearPasses();
         }
-        p.amIOld();
+        person.amIOld();
         console.log();
-    }
+    });
 }
+
+main();

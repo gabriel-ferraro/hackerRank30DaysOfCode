@@ -1,5 +1,5 @@
 //create a function that recieves a base 10 integer, this integer must be converted to binary (base 2);
-//the function must return the greatest quantity of consecutive ones present in the binary number, as a base 10 integer;
+//the function must return the greatest quantity of consecutive ones present in the binary number, as a base 10 number integer;
 
 function consecutiveOnes(n: number) {
     let currentConsecutiveOnes = 0;

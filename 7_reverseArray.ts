@@ -1,7 +1,7 @@
-//recieving a number array, reverse it and print it as a string separated by spaces; example:
+//reversing a number array, and printing it as a string separated by spaces; example:
 
-//numberArray = [4, 3, 2, 1]
-//reversedNumberArray = [1, 2, 3, 4];
+//numberArray == [4, 3, 2, 1]
+//reversedNumberArray == [1, 2, 3, 4];
 //print the string: "1 2 3 4";
 
 function reverseArray(arr: number[]) {
